@@ -11,3 +11,120 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  height: auto;
+  padding: 30px;
+}
+
+header > img {
+  width: 150px;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+}
+
+.left {
+  width: 100%;
+  height: auto;
+  padding: 50px 30px 0 30px;
+}
+
+.right {
+  width: 100%;
+  height: 250px;
+  background-image: url("./media/hero-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: end;
+}
+
+.left > h1 {
+  font-size: 3.2rem;
+  font-weight: 200;
+  color: var(--red);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  line-height: 3.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.bold {
+  font-weight: 600;
+  color: #000;
+}
+
+.left > p {
+  max-width: 450px;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 25px;
+  color: var(--red);
+}
+
+form {
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form > input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 50px;
+  left: 0;
+  top: 0;
+  border: 1px solid var(--red);
+  padding-left: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: var(--red);
+  opacity: 0.8;
+}
+
+form > button {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0px 0px 18px 1px hsla(0, 36%, 70%, 0.5);
+}
+
+form > button:hover {
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsla(0, 52%, 80%, 0.7)
+  );
+}
