@@ -128,3 +128,49 @@ form > button:hover {
     hsla(0, 52%, 80%, 0.7)
   );
 }
+
+@media only screen and (min-width: 768px) {
+  header {
+    position: absolute;
+    padding-left: 10%;
+  }
+  header > img {
+    width: 180px;
+  }
+  .container {
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .right {
+    width: 80%;
+    height: 100vh;
+    background-image: url("./media/hero-desktop.jpg");
+  }
+  .left {
+    height: 100vh;
+    padding-top: 28vh;
+    text-align: left;
+    padding-left: 10%;
+    background-image: url("./media/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+  .left > p {
+    margin-left: 0;
+    font-size: 1.1rem;
+  }
+  .left > h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+  form {
+    margin-left: 0;
+    max-width: 400px;
+  }
+  form > button {
+    width: 80px;
+  }
+}
