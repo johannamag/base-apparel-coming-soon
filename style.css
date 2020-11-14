@@ -129,6 +129,30 @@ form > button:hover {
   );
 }
 
+.erroricon {
+  position: absolute;
+  top: 24%;
+  right: 80px;
+  display: none;
+}
+
+.form.error .erroricon {
+  display: block;
+}
+
+.errortext {
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  font-size: 0.7rem;
+  color: var(--softred);
+  display: none;
+}
+
+.form.error .errortext {
+  display: block;
+}
+
 @media only screen and (min-width: 768px) {
   header {
     position: absolute;
